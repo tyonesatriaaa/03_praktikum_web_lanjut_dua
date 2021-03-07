@@ -28,8 +28,8 @@ Route::prefix('products')->group(function () {
     Route::get('/', [ProductsController::class, 'products']);
 });
 
-Route::get('/news/{id}', function ($id) {
-    return view ('news').$id;
+Route::get('/news', function () {
+    return view ('news');
 });
 
 Route::prefix('program')->group(function () {

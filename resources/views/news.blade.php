@@ -1,14 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>News</title>
-</head>
-<body>
-    <h1>Halaman News</h1>
-    <a href="https://www.educastudio.com/news/">News</a><br>
-    <a href="https://www.educastudio.com/news/educa-studio-berbagi-untuk-warga-sekitar-terdampak-covid-19">Educa Studio Berbagi Untuk Warga Sekitar Terdampak Covid-19</a><br>
-</body>
-</html> 
+@extends('layouts.master')
+
+@section('title','News')
+@section('slider')
+    <!-- SLIDER -->
+    <div class="site-slider">
+        <div class="flexslider">
+            <ul class="slides">
+                <li class="slide">
+                    <img src="images/slide1.jpg" alt="">
+                    <div class="slider-caption">
+                        <div class="title">
+                            <p><font size="30px" color="black">Halaman News</font></p>
+                            <a href="https://www.educastudio.com/news/">News</a><br>
+                            <a href="https://www.educastudio.com/news/educa-studio-berbagi-untuk-warga-sekitar-terdampak-covid-19">Educa Studio Berbagi Untuk Warga Sekitar Terdampak Covid-19</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>   
+    </div> <!-- .site-slider -->
+
+@endsection
