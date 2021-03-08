@@ -19,5 +19,4 @@
         </div>   
     </div> <!-- .site-slider -->
 
-
 @endsection
