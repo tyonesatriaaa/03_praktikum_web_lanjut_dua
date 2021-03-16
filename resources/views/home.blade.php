@@ -10,8 +10,11 @@
                     <img src="images/slide1.jpg" alt="">
                     <div class="slider-caption">
                         <div class="title">
-                            <p><font size="30px" color="black">Halaman Home</font></p>
-                            <a href="https://www.educastudio.com/" size="20px"> Educa Studio </a>
+                            @foreach ($homes as $home) 
+                            <p><font size="30px" color="black">{{$home->deskripsi}}</font></p>
+                            <a href={{$home->link}} size="20px"> Educa Studio </a>
+                            @endforeach
+                            
                         </div>
                     </div>
                 </li>

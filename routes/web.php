@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\ProgramController;
 use App\Http\Controllers\ContactController;
@@ -20,9 +21,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', function () {
-    return view ('home');
-});
+// Route::get('/home', function () {
+//     return view ('home');
+// });
+
+Route::get('/home', [HomeController::class, 'home']);
 
 Route::prefix('products')->group(function () { 
     Route::get('/', [ProductsController::class, 'products']);
